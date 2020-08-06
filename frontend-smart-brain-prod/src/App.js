@@ -77,7 +77,7 @@ class App extends Component {
           }
         })
         .catch(err => {
-          console.log('failed');
+          console.log();
         })
     }
   }
@@ -120,7 +120,7 @@ class App extends Component {
   }
 
   onButtonSubmit = () => {
-    if(!this.state.input) return;
+    if (!this.state.input) return;
     const token = window.localStorage.getItem('token');
     if (!token) {
       this.setState(initialState);
@@ -190,7 +190,7 @@ class App extends Component {
         {
           isProfileOpen &&
           <Modal>
-            <Profile isProfileOpen={isProfileOpen} toggleModal={this.toggleModal} user={user} loadUser={this.loadUser} initialState={initialState} onRouteChange={this.onRouteChange}/>
+            <Profile isProfileOpen={isProfileOpen} toggleModal={this.toggleModal} user={user} loadUser={this.loadUser} initialState={initialState} onRouteChange={this.onRouteChange} />
           </Modal>
         }
         {route === 'home'

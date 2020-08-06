@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend-smart-brain-prod && npm run build --prefix frontend-smart-brain-prod"
   },
   "keywords": [],
   "author": "",

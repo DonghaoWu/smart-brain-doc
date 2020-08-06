@@ -6,6 +6,9 @@ const cors = require('cors');
 const knex = require('knex');
 const morgan = require('morgan');
 
+const path = require('path');
+const PORT = process.env.PORT || 4000;
+
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
@@ -23,7 +26,6 @@ const db = knex({
 });
 
 const app = express();
-
 app.use(morgan('tiny'));
 app.use(cors());
 app.use(bodyParser.json());
@@ -36,6 +38,14 @@ app.post('/profile/:id', auth.requireAuth, (req, res) => { profile.handleProfile
 app.put('/image', auth.requireAuth, (req, res) => { image.handleImage(req, res, db) })
 app.post('/imageurl', auth.requireAuth, (req, res) => { image.handleApiCall(req, res) })
 
-app.listen(4000, () => {
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('frontend-smart-brain-prod/build'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'frontend-smart-brain-prod', 'build', 'index.html'))
+  })
+}
+
+app.listen(port, () => {
   console.log('app is running on port 4000');
 })
