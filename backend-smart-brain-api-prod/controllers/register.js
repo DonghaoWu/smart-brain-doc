@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-// const redis = require('redis');
+const redis = require('redis');
 
 // // setup Redis:
 // const redisClient = redis.createClient();
