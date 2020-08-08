@@ -34,7 +34,7 @@ const handleRegisterPromise = (req, res, db, bcrypt) => {
       .catch(trx.rollback)
   })
     .catch(err => {
-      return Promise.reject('unable to register')
+      return Promise.reject(err)
     })
 }
 

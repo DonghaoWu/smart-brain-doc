@@ -103,5 +103,6 @@ const db = knex({
 ```diff
 - "heroku-postbuild": "cd frontend-smart-brain-prod && npm npm"
 - "heroku-postbuild": "cd frontend-smart-brain-prod && npm build"
-+ "heroku-postbuild": "cd frontend-smart-brain-prod npm install && npm run build"
+- "heroku-postbuild": "cd frontend-smart-brain-prod npm install && npm run build"
++ "heroku-postbuild": "cd frontend-smart-brain-prod && npm install --only=dev && npm install && npm run build"
 ```
