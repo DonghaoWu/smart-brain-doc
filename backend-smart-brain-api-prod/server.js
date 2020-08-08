@@ -31,8 +31,8 @@ const db = require('knex')({
 });
 
 const app = express();
-app.use(morgan('tiny'));
-app.use(cors());
+// app.use(morgan('tiny'));
+// app.use(cors());
 app.use(bodyParser.json());
 
 // app.get('/', (req, res) => { res.send(`This message is from server.js. You will get this message when visit http://localhost:4000/`) })
@@ -43,10 +43,10 @@ app.post('/profile/:id', auth.requireAuth, (req, res) => { profile.handleProfile
 app.put('/image', auth.requireAuth, (req, res) => { image.handleImage(req, res, db) })
 app.post('/imageurl', auth.requireAuth, (req, res) => { image.handleApiCall(req, res) })
 
-if(process.env.NODE_ENV === 'production'){
+if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../frontend-smart-brain-prod/build')));
-  app.use((req,res)=>{
-      res.sendFile(path.join(__dirname,'../frontend-smart-brain-prod/build/index.html'));
+  app.use((req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend-smart-brain-prod/build/index.html'));
   })
 }
 
