@@ -88,3 +88,5 @@ const db = knex({
   }
 });
 ```
+
+7. Add proxy.
