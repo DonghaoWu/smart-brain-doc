@@ -25,7 +25,7 @@ const auth = require('./middlewares/authorization');
 //   }
 // });
 
-const pg = require('knex')({
+const db = require('knex')({
   client: 'pg',
   connection: process.env.DATABASE_URL
 });
