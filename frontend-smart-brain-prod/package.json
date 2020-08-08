@@ -17,8 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend-smart-brain-prod && npm run build --prefix frontend-smart-brain-prod"
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
