@@ -9,3 +9,19 @@ Final project for Udemy course
 You can grab Clarifai API key [here](https://www.clarifai.com/)
 
 ** Make sure you use postgreSQL instead of mySQL for this code base.
+
+1. Run Redis locally:
+
+```bash
+$ cd
+$ cd redis-6.0.6
+$ src/redis-server
+```
+
+2. Run redis CLI
+
+```bash
+$ cd
+$ cd redis-6.0.6
+$ src/redis-cli
+```
