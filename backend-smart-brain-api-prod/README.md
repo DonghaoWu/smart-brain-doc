@@ -50,3 +50,41 @@ const redisClient = redis.createClient());
 const redis = require('redis');
 const redisClient = redis.createClient(process.env.REDIS_URI);
 ```
+
+5. Add API_KEY environment variable.
+
+6. Add DATABASE_URL environmen in server.js.
+
+- heroku
+```js
+const pg = require('knex')({
+  client: 'pg',
+  connection: process.env.DATABASE_URL
+});
+```
+
+- local
+```js
+const db = knex({
+  client: process.env.POSTGRES_CLIENT,
+  connection: {
+    host: process.env.POSTGRES_HOST,
+    user: process.env.POSTGRES_USER,
+    password: process.env.POSTGRES_PASSWORD,
+    database: process.env.POSTGRES_DB
+  }
+});
+```
+
+- docker
+```js
+const db = knex({
+  client: process.env.POSTGRES_CLIENT,
+  connection: {
+    host: process.env.POSTGRES_HOST,
+    user: process.env.POSTGRES_USER,
+    password: process.env.POSTGRES_PASSWORD,
+    database: process.env.POSTGRES_DB
+  }
+});
+```

@@ -15,14 +15,19 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 const auth = require('./middlewares/authorization');
 
-const db = knex({
-  client: process.env.POSTGRES_CLIENT,
-  connection: {
-    host: process.env.POSTGRES_HOST,
-    user: process.env.POSTGRES_USER,
-    password: process.env.POSTGRES_PASSWORD,
-    database: process.env.POSTGRES_DB
-  }
+// const db = knex({
+//   client: process.env.POSTGRES_CLIENT,
+//   connection: {
+//     host: process.env.POSTGRES_HOST,
+//     user: process.env.POSTGRES_USER,
+//     password: process.env.POSTGRES_PASSWORD,
+//     database: process.env.POSTGRES_DB
+//   }
+// });
+
+const pg = require('knex')({
+  client: 'pg',
+  connection: process.env.DATABASE_URL
 });
 
 const app = express();
