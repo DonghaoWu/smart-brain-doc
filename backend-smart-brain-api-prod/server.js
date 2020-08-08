@@ -32,7 +32,7 @@ const db = require('knex')({
 
 const app = express();
 // app.use(morgan('tiny'));
-// app.use(cors());
+app.use(cors());
 app.use(bodyParser.json());
 
 // app.get('/', (req, res) => { res.send(`This message is from server.js. You will get this message when visit http://localhost:4000/`) })
