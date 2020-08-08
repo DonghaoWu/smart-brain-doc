@@ -90,3 +90,8 @@ const db = knex({
 ```
 
 7. Add proxy.
+
+8. 删除：  root directory 中的 .gitignore 语句
+
+# production
+/build
