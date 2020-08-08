@@ -35,7 +35,7 @@ app.use(morgan('tiny'));
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => { res.send(`This message is from server.js. You will get this message when visit http://localhost:4000/`) })
+// app.get('/', (req, res) => { res.send(`This message is from server.js. You will get this message when visit http://localhost:4000/`) })
 app.post('/signin', (req, res) => { signin.signinAuthentication(req, res, db, bcrypt) })
 app.post('/register', (req, res) => { register.registerAuthentication(req, res, db, bcrypt) })
 app.get('/profile/:id', auth.requireAuth, (req, res) => { profile.handleProfileGet(req, res, db) })
