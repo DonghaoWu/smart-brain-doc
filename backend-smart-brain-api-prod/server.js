@@ -43,7 +43,7 @@ app.post('/profile/:id', auth.requireAuth, (req, res) => { profile.handleProfile
 app.put('/image', auth.requireAuth, (req, res) => { image.handleImage(req, res, db) })
 app.post('/imageurl', auth.requireAuth, (req, res) => { image.handleApiCall(req, res) })
 
-if(ENV === 'production'){
+if(process.env.NODE_ENV === 'production'){
   app.use(express.static(path.join(__dirname, '../frontend-smart-brain-prod/build')));
   app.use((req,res)=>{
       res.sendFile(path.join(__dirname,'../frontend-smart-brain-prod/build/index.html'));
