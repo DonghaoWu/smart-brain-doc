@@ -12,7 +12,7 @@
     "server": "npm run server --prefix backend-smart-brain-api-prod",
     "start": "npm start --prefix backend-smart-brain-api-prod",
     "heroku-prebuild": "cd backend-smart-brain-api-prod && npm install",
-    "heroku-postbuild": "cd frontend-smart-brain-prod && npm build"
+    "heroku-postbuild": "cd frontend-smart-brain-prod npm install && npm run build"
   },
   "repository": {
     "type": "git",

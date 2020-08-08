@@ -95,3 +95,10 @@ const db = knex({
 
 # production
 /build
+
+9. 错误语句：
+
+```diff
+- "heroku-postbuild": "cd frontend-smart-brain-prod && npm npm"
++ "heroku-postbuild": "cd frontend-smart-brain-prod && npm build"
+```
