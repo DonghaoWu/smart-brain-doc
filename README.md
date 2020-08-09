@@ -98,6 +98,8 @@ const db = knex({
 # production
 /build
 
+- 这个没关系。
+
 9. 错误语句：
 
 ```diff
@@ -120,6 +122,8 @@ heroku ps:scale web=1
 heroku open
 
 heroku git:remote -a weather-app-demo-2020-001
+
+heroku logs --tail
 ```
 
 11. change
@@ -134,4 +138,13 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+```
+
+12. Pool?
+```js
+const db = require('knex')({
+  client: 'pg',
+  connection: process.env.DATABASE_URL,
+  pool: { min: 0, max: 10 }
+});
 ```

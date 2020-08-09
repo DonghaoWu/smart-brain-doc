@@ -27,7 +27,8 @@ const auth = require('./middlewares/authorization');
 
 const db = require('knex')({
   client: 'pg',
-  connection: process.env.DATABASE_URL
+  connection: process.env.DATABASE_URL,
+  pool: { min: 0, max: 10 }
 });
 
 // const app = express();
