@@ -44,7 +44,7 @@ const client = redis.createClient(process.env.REDIS_URL, {no_ready_check: true})
 - local redis
 ```js
 const redis = require('redis');
-const redisClient = redis.createClient());
+const redisClient = redis.createClient();
 ```
 
 - docker redis
