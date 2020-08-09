@@ -50,6 +50,7 @@ const setToken = (token, id) => {
 }
 
 const createSession = (user) => {
+  console.log('hit here in createSession');
   const { email, id } = user;
   const token = signToken(email);
   return setToken(token, id)
@@ -70,9 +71,11 @@ const signinAuthentication = (req, res, db, bcrypt) => {
   return authorization ? hasTokenAndGetIdFromRedis(req, res)
     : noTokenSigninAndGetUser(req, res, db, bcrypt)
       .then(data => {
+        console.log('generate data', data);
         return data.id && data.email ? createSession(data) : Promise.reject(data)
       })
       .then(session => {
+        console.log('generate session', session);
         return res.json(session);
       })
       .catch(err => {
