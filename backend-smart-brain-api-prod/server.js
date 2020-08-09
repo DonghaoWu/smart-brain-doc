@@ -33,7 +33,7 @@ const db = require('knex')({
 
 // const app = express();
 // app.use(morgan('tiny'));
-// app.use(cors());
+app.use(cors());
 // app.use(bodyParser.json());
 
 const app = express();
