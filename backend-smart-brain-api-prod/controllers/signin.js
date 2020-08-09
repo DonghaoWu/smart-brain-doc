@@ -41,11 +41,13 @@ const hasTokenAndGetIdFromRedis = (req, res) => {
 }
 
 const signToken = (email) => {
+  console.log('hit here in generate token by jwt');
   const jwtPayload = { email };
   return jwt.sign(jwtPayload, process.env.JWT_SECRET, { expiresIn: '2 days' });
 }
 
 const setToken = (token, id) => {
+  console.log('hit here in storing token in redis');
   return Promise.resolve(redisClient.set(token, id))
 }
 
@@ -55,6 +57,7 @@ const createSession = (user) => {
   const token = signToken(email);
   return setToken(token, id)
     .then(() => {
+      console.log('generate token success', token)
       return {
         success: 'true',
         userId: id,
@@ -79,6 +82,7 @@ const signinAuthentication = (req, res, db, bcrypt) => {
         return res.json(session);
       })
       .catch(err => {
+        console.log(err)
         return res.status(400).json(err)
       });
 }
