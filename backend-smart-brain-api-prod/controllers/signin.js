@@ -7,6 +7,7 @@ const redisClient = redis.createClient(process.env.REDIS_URL, { no_ready_check: 
 
 
 const noTokenSigninAndGetUser = (req, res, db, bcrypt) => {
+  console.log('hit signin route in backend');
   const { email, password } = req.body;
   if (!email || !password) {
     return Promise.reject('incorrect form submission');

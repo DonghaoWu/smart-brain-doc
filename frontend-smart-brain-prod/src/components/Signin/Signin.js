@@ -23,6 +23,7 @@ class Signin extends React.Component {
   }
 
   onSubmitSignIn = () => {
+    console.log('hit signin route frontend')
     fetch('/signin', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
@@ -33,6 +34,7 @@ class Signin extends React.Component {
     })
       .then(response => response.json())
       .then(session => {
+        console.log('get session');
         if (session.userId && session.success === 'true') {
           this.saveAuthTokenInSession(session.token);
           fetch(`/profile/${session.userId}`, {
