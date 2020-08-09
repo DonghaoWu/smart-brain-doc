@@ -30,9 +30,14 @@ const db = require('knex')({
   connection: process.env.DATABASE_URL
 });
 
-const app = express();
+// const app = express();
 // app.use(morgan('tiny'));
-app.use(cors());
+// app.use(cors());
+// app.use(bodyParser.json());
+
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // app.get('/', (req, res) => { res.send(`This message is from server.js. You will get this message when visit http://localhost:4000/`) })

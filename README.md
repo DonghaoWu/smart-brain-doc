@@ -106,3 +106,32 @@ const db = knex({
 - "heroku-postbuild": "cd frontend-smart-brain-prod npm install && npm run build"
 + "heroku-postbuild": "cd frontend-smart-brain-prod && npm install --only=dev && npm install && npm run build"
 ```
+
+10. deploy
+
+```bash
+git add .
+git commit -m'ready for deploy'
+git push
+git push heroku master
+
+heroku ps:scale web=1
+
+heroku open
+
+heroku git:remote -a weather-app-demo-2020-001
+```
+
+11. change
+
+```js
+// const app = express();
+// app.use(morgan('tiny'));
+// app.use(cors());
+// app.use(bodyParser.json());
+
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+```
