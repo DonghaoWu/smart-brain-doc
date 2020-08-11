@@ -2,6 +2,21 @@
 
 ### Production repo link: [smart-brain-prod-repo](https://github.com/DonghaoWu/smart-brain-prod)
 
+# Web development tools (Part 30)
+
+### `Key Word: Heroku deploy addon postgreSQL, addon redis, Heroku environment variable, package.json scrips, Heroku debug.`
+
+- #### Click here: [BACK TO NAVIGASTION](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/README.md)
+
+## `Section: Heroku deploy`(Basic)
+
+### `Summary`: In this documentation, we learn deploy an application with postgreSQL and redis.
+
+### `Check Dependencies & Tools:`
+
+- 
+------------------------------------------------------------
+
 ### <span id="30.0">`Brief Contents & codes position`</span>
 
 - #### Click here: [BACK TO NAVIGASTION](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/README.md)
