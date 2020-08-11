@@ -22,7 +22,7 @@
 - #### Click here: [BACK TO NAVIGASTION](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/README.md)
 
 - [30.1 Download & connect to your gitHub.](#30.1)
-- [30.2 Add AWS Lambda endpoint.](#30.2)
+- [30.2 Add AWS Lambda endpoint in front end.](#30.2)
 - [30.3 Run the application locally.](#30.3)
 - [30.4 Deploy the application on Heroku.](#30.4)
 
@@ -41,11 +41,11 @@
     $ git push -u origin master
     ```
 
-### <span id="30.2">`Download & connect to your gitHub.`</span>
+### <span id="30.2">`Add AWS Lambda endpoint in front end.`</span>
 
 - #### Click here: [BACK TO CONTENT](#30.0)
 
-    Visit here [AWS LAMBDA ENDPOINT.](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/AWS/AWS.md)
+    :gem:Visit here [AWS LAMBDA ENDPOINT.](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/AWS/AWS.md)
 
 ### <span id="30.3">`Run the application locally.`</span>
 
