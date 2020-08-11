@@ -25,7 +25,7 @@
     $ git push -u origin master
     ```
 
-### :star: Add a lambda endpoint and apply it in front end, [visit here.](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/AWS/AWS.md)
+### :star: `Add an AWS lambda endpoint and apply it in front end,` [visit here.](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/AWS/AWS.md)
 
 ### <span id="30.2">`Run the application locally.`</span>
 
