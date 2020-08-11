@@ -145,7 +145,7 @@
 
     $ heroku create <your-heroku-app-name> # 定制 app 名字
 
-    heroku addons:create heroku-redis:hobby-dev # 新增一个 redis
+    $ heroku addons:create heroku-redis:hobby-dev # 新增一个 redis
 
     $ heroku addons:create heroku-postgresql:hobby-dev --name=<your-heroku-addon-db-name> # 新增一个 postgreSQL 的 database。
 
@@ -311,7 +311,7 @@
 
     - :star::star: Proxy 加上简化 fetch link 的作用在于方便本地调试，实际上但使用 fetch link 就可以 deploy，proxy 对 deploy 没有作用。
 
-    - 但是如果不改变的话 deploy 在 heroku 上面就会出现错误：
+    - 但是如果不按照上面改变代码的话 deploy 在 heroku 上面就会出现错误：
 
   <p align="center">
   <img src="./assets/p30-03.png" width=90%>
