@@ -21,9 +21,10 @@
 
 - #### Click here: [BACK TO NAVIGASTION](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/README.md)
 
-- [30.1 Download & connect to your gitHub..](#30.1)
-- [30.2 Run the application locally.](#30.2)
-- [30.3 Deploy the application on Heroku.](#30.3)
+- [30.1 Download & connect to your gitHub.](#30.1)
+- [30.2 Add AWS Lambda endpoint.](#30.2)
+- [30.3 Run the application locally.](#30.3)
+- [30.4 Deploy the application on Heroku.](#30.4)
 
 ### <span id="30.1">`Download & connect to your gitHub.`</span>
 
@@ -40,9 +41,13 @@
     $ git push -u origin master
     ```
 
-#### :gem: `Add an AWS lambda endpoint and apply it in front end,` [visit here.](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/AWS/AWS.md)
+### <span id="30.2">`Download & connect to your gitHub.`</span>
 
-### <span id="30.2">`Run the application locally.`</span>
+- #### Click here: [BACK TO CONTENT](#30.0)
+
+    Visit here [AWS LAMBDA ENDPOINT.](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/AWS/AWS.md)
+
+### <span id="30.3">`Run the application locally.`</span>
 
 - #### Click here: [BACK TO CONTENT](#30.0)
 
@@ -153,7 +158,7 @@
     $ npm run dev
     ```
 
-### <span id="30.3">`Deploy the application on Heroku.`</span>
+### <span id="30.4">`Deploy the application on Heroku.`</span>
 
 - #### Click here: [BACK TO CONTENT](#30.0)
 
