@@ -1,6 +1,6 @@
 # smart-brain-doc
 
-### Production repo link: [https://github.com/DonghaoWu/smart-brain-prod](https://github.com/DonghaoWu/smart-brain-prod)
+### Production repo link: [smart-brain-prod-repo](https://github.com/DonghaoWu/smart-brain-prod)
 
 ### <span id="30.0">`Brief Contents & codes position`</span>
 
