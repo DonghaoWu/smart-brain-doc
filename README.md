@@ -1,5 +1,7 @@
 # smart-brain-doc
 
+### Production repo link: [https://github.com/DonghaoWu/smart-brain-prod](https://github.com/DonghaoWu/smart-brain-prod)
+
 ### <span id="30.0">`Brief Contents & codes position`</span>
 
 - #### Click here: [BACK TO NAVIGASTION](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/README.md)
