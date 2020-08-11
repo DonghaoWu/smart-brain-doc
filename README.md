@@ -6,7 +6,7 @@
 
 - [30.1 Download & connect to your gitHub..](#30.1)
 - [30.2 Run the application locally.](#30.2)
-- [30.3 Heroku deploy the application.](#30.3)
+- [30.3 Deploy the application on Heroku.](#30.3)
 
 ### <span id="30.1">`Download & connect to your gitHub.`</span>
 
@@ -102,11 +102,11 @@
     });
     ```
 
-    - 这里的 connection 可以使用 URI 代替，比如：[postgreSQL connection string](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)
+    - 这里的 connection 可以使用 URI 代替，比如：[postgreSQL connection string.](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)
 
 6. Create postgreSQL database and tables:
 
-    - Create database: postico [CHECK HERE](https://github.com/DonghaoWu/Weather-RNEP-heroku-new/blob/master/README.md)
+    - Create database: Postico [CHECK HERE.](https://github.com/DonghaoWu/Weather-RNEP-heroku-new/blob/master/README.md)
 
     - Create tables:
 
@@ -134,7 +134,7 @@
     $ npm run dev
     ```
 
-### <span id="30.3">`Heroku deploy the application.`</span>
+### <span id="30.3">`Deploy the application on Heroku.`</span>
 
 - #### Click here: [BACK TO CONTENT](#30.0)
 
