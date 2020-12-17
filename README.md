@@ -1,6 +1,24 @@
 # smart-brain-doc
 
-### Production repo link: [smart-brain-prod-repo](https://github.com/DonghaoWu/smart-brain-prod)
+### Deployed repo URL: [smart-brain-heroku](https://github.com/DonghaoWu/smart-brain-heroku)
+
+<p align="center">
+<img src="./assets/smart-brain-01.png" width=85%>
+</p>
+
+--------------------------------------------------------------
+
+<p align="center">
+<img src="./assets/smart-brain-02.png" width=85%>
+</p>
+
+--------------------------------------------------------------
+
+<p align="center">
+<img src="./assets/smart-brain-03.png" width=85%>
+</p>
+
+--------------------------------------------------------------
 
 # Web development tools (Part 30)
 
